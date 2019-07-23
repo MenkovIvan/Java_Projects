@@ -8,11 +8,9 @@ public class CreateDataTest extends Assert {
 
     @Test
     public void testCreateTable() throws SQLException, ClassNotFoundException {
-        CreateData cD = new CreateData();
 
-        assertFalse(cD.createTable());  // return false if table with the same name exists in the database
+        assertTrue(CreateData.createTable());  // return true if table with the same name is not exist in the database
 
-
-        //assertTrue(cD.createTable()); // return true if table with the same name not exists in the database
+        assertFalse(CreateData.createTable()); // return false because table with the same name is exist in the database
     }
 }

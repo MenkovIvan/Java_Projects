@@ -16,7 +16,7 @@ public class InsertData {
             return false;
         }
 
-        String sql = "INSERT INTO users (name, age, password) VALUES('" + user.getName() + "', " + user.getAge() + " '" + user.getPassword() + "')";
+        String sql = "INSERT INTO users (name, age, password) VALUES('" + user.getName() + "', " + user.getAge() + ", '" + user.getPassword() + "')";
 
         statement.executeUpdate(sql);
 

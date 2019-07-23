@@ -55,7 +55,7 @@ public class UpdateData {
             return false;
         }
 
-        String sql = "UPDATE users SET age='" + age + "' WHERE name=" + user.getName() + "";
+        String sql = "UPDATE users SET age=" + age + " WHERE name='" + user.getName() + "'";
 
         statement.executeUpdate(sql);
 

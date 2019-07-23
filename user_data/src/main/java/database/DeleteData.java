@@ -13,7 +13,7 @@ public class DeleteData {
 
         Statement statement = connection.createStatement();
 
-        String sql = "DELETE FROM users WHERE name='" + user.getName() + "', age=" + user.getAge() + ", password='" + user.getPassword() + "'";
+        String sql = "DELETE FROM users WHERE name='" + user.getName() + "' AND age=" + user.getAge() + " AND password='" + user.getPassword() + "'";
 
         statement.executeUpdate(sql);
     }
