@@ -7,10 +7,7 @@ public class Cell {
     }
 
     public boolean isEmpty(){
-        if (value == strings._){
-            return true;
-        }
-        else return false;
+        return (value == strings._);
     }
 
     public strings getValue() {
